@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? família=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image">
+    <script src="main.js" defer></script>
+    <title>Cadastro de Clientes</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Clientes - Fragola</h1>
+    </header>
+    <main>
+        <button type="button" class="button rose mobile interno" id="cadastrarCliente">Cadastrar Cliente</button>
+        <table id = "tableClient" class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id = "form" class="modal-form">
+                    <input id= "nome" data-index="new" type="text" class="modal-field" placeholder="Nome" required>
+                    <input id="email" type="email" class="modal-field" placeholder="E-mail" required>
+                    <input id="celular" type="text" class="modal-field" placeholder="Celular" required>
+                    <input id="cidade"type="text" class="modal-field" placeholder="Cidade" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button rose">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+        <a href="index.html"><button type="button" class="button-return button rose">Voltar</button></a>
+    </main>
+    <footer>
+        <img src="assets/logo.png" width=160px>
+    </footer>
+</body>
+</html>
